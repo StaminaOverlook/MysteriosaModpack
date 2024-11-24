@@ -1,0 +1,9 @@
+*
+!.gitignore
+!mods/
+mods/*
+!mods/*
+!resourcepacks/
+resourcepacks/*
+!resourcepacks/*
+mods/eeriemusic-1.20.1-1.4.jar
