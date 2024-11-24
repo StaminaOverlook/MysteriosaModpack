@@ -1,3 +1,3 @@
 I wasn't able to git push the Eerie Music mod, so if you want it (it's only required client-side), you'll have to download it yourself from [https://www.curseforge.com/minecraft/mc-mods/eerie-music-forge-fabric/files/5390891](Curseforge) or through your launcher.
 
-I highly recommend you to download Github Studios and link this repository with your .minecraft folder! That way, to update the modpack, you just have to check into Github Studios and press one button, and the relevant mods will update themselves. But you can also download zip folders and replace all the items by yourself. It's up to you!
+I highly recommend you to download Github Desktop and link this repository with your .minecraft folder! That way, to update the modpack, you just have to check into Github Desktop and press one button, and the relevant mods will update themselves. But you can also download zip folders and replace all the items by yourself. It's up to you!
