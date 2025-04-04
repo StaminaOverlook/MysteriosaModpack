@@ -1,0 +1,13 @@
+filename = 'create-1.12.2-0.2.0a.jar'
+name = 'Create Legacy'
+side = 'both'
+
+[download]
+hash = 'e30dc553a7b6af4cb505ed1b36e437cb6224bbdb1c7c6cf0d79d39fe1b4ee066240f053ded85ed01c966935c184dfc35767bccee9fe9d0ba5d088143e99f851e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/KPid9MeX/versions/FLd6AfVl/create-1.12.2-0.2.0a.jar'
+
+[update.modrinth]
+mod-id = 'KPid9MeX'
+version = 'FLd6AfVl'

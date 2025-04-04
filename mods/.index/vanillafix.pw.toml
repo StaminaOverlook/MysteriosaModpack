@@ -1,0 +1,13 @@
+filename = 'VanillaFix-1.0.10-150.jar'
+name = 'VanillaFix'
+side = 'both'
+
+[download]
+hash = '646fc28aa81773662e33a3b447e830b816528fc9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2915154
+project-id = 292785

@@ -1,0 +1,13 @@
+filename = 'colytra-1.12.2-1.2.0.4.jar'
+name = 'Colytra (Fabric/Forge/Quilt)'
+side = 'both'
+
+[download]
+hash = 'ed1cb53243621af564d6371aaa5929646bc00c2b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2828877
+project-id = 280200

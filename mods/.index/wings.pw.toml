@@ -1,0 +1,13 @@
+filename = 'wings-1.1.6-1.12.2.jar'
+name = 'Wings'
+side = 'both'
+
+[download]
+hash = '62283c00b42cea20b49927fd886866b7aee7382e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2829351
+project-id = 302584

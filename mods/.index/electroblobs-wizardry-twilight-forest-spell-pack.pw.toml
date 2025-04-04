@@ -1,0 +1,13 @@
+filename = 'TFSpellPack-1.1.0-MC1.12.2.jar'
+name = "Electroblob's Wizardry: Twilight Forest Spell Pack"
+side = 'both'
+
+[download]
+hash = '4d21f2fe2d8a2cc9e4fb1bfaddf867911c95c8b5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3140441
+project-id = 363993

@@ -1,0 +1,13 @@
+filename = 'bibliotheca-1.3.6-1.12.2.jar'
+name = 'Bibliotheca'
+side = 'both'
+
+[download]
+hash = 'd6e2e177f6a490e966d3870097c45f2b9e920b58'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2661470
+project-id = 268210

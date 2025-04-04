@@ -1,0 +1,13 @@
+filename = 'flightboost-1.0.0.5.jar'
+name = 'FlightBoost'
+side = 'both'
+
+[download]
+hash = 'c6d0983535778e649e2284178b5efccd16edb556'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2670674
+project-id = 313463

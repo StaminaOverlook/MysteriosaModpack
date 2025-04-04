@@ -1,0 +1,13 @@
+filename = 'NaturalPledge-r3.1.2.jar'
+name = 'Natural Pledge'
+side = 'both'
+
+[download]
+hash = '2e4e4456adea41df1a8739fffd1d731bc61df710'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2740703
+project-id = 247704

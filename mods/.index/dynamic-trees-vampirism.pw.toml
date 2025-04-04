@@ -1,0 +1,13 @@
+filename = 'DynamicTreesVampirism-1.12.2-1.0.1.jar'
+name = 'Dynamic Trees - Vampirism'
+side = 'both'
+
+[download]
+hash = 'c6a5785129e63b716f01f5aeb8389e8a0b2e8117'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3108797
+project-id = 418326

@@ -1,0 +1,13 @@
+filename = 'WitherSkeletonTweaks-1.12.2-2.6.3.jar'
+name = 'Wither Skeleton Tweaks'
+side = 'both'
+
+[download]
+hash = 'a67cf5cf71cbfacad28b6c8caf280c7196c82bfb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2661187
+project-id = 255902

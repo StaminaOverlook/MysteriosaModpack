@@ -1,0 +1,13 @@
+filename = 'ArcaneArteries-1.12.2-1.0.0.jar'
+name = 'Arcane Arteries'
+side = 'both'
+
+[download]
+hash = '00e1821f5aa51fa38188808eb8b4618b2c838914'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2747939
+project-id = 230977

@@ -1,0 +1,13 @@
+filename = 'DynamicTreesTheBetweenlands-1.12.2-1.0.3.jar'
+name = 'Dynamic Trees - The Betweenlands'
+side = 'both'
+
+[download]
+hash = '885e3c52f0323d9e0b883c6f5ec98f776d49c70b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3812464
+project-id = 473277

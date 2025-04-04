@@ -1,0 +1,13 @@
+filename = 'stygian-1.0.4.jar'
+name = 'Stygian End: Biome Expansion'
+side = 'both'
+
+[download]
+hash = '83cd2334222ba33a1f812cfcc877b2bddef249ff'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2650369
+project-id = 304894

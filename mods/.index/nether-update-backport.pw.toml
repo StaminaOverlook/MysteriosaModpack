@@ -1,0 +1,13 @@
+filename = 'NetherUpdateBackport-1.12.2(1.0.1).jar'
+name = 'Nether Update Backport'
+side = 'both'
+
+[download]
+hash = '5394b79e933db3f87de303e913122e961482602a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3140835
+project-id = 384529

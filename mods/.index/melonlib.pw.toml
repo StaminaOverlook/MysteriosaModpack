@@ -1,0 +1,13 @@
+filename = 'melonlib-1.12.2-1.2.jar'
+name = 'MelonLib'
+side = 'both'
+
+[download]
+hash = '2e6dc58029e8e183aba33aa1392d37e68c3aae8f3c6ddca3a78f73e94a8c631dd6e6d0b4b138fa3f5c0b29dca759619e2296eb682fcae3fdbb059097650d57be'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/UUXMxc2X/versions/xg8lX90l/melonlib-1.12.2-1.2.jar'
+
+[update.modrinth]
+mod-id = 'UUXMxc2X'
+version = 'xg8lX90l'

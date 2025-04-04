@@ -1,0 +1,13 @@
+filename = 'ITank-1.2.1-1.12.2.jar'
+name = 'ITank'
+side = 'both'
+
+[download]
+hash = '11246b97ad66991295690f90b0ce01ce6bc90f99'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2627330
+project-id = 256991
