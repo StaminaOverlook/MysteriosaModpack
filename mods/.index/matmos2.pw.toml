@@ -1,0 +1,13 @@
+filename = 'Matmos_7.0_1.12.2.jar'
+name = 'MAtmos ambient sound'
+side = 'both'
+
+[download]
+hash = 'bda4658715afb4c6f11e90ee749acff7349eae91'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6313117
+project-id = 548114

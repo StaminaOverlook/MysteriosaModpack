@@ -1,0 +1,13 @@
+filename = 'alib-1.0.12.jar'
+name = 'AlchemyLib'
+side = 'both'
+
+[download]
+hash = '01598e1bdd7e4851bab5193537011853652f08f0'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2761706
+project-id = 293426

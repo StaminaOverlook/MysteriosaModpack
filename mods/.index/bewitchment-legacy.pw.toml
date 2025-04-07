@@ -1,0 +1,13 @@
+filename = 'bewitchment-1.12.2-0.0.22.65.jar'
+name = 'Bewitchment (Legacy)'
+side = 'both'
+
+[download]
+hash = 'd9ba8bdbab4a700038237d79c9102799ef5d05c1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6379256
+project-id = 285439

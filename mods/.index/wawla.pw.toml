@@ -1,0 +1,13 @@
+filename = 'Wawla-1.12.2-2.6.275.jar'
+name = 'Wawla - What Are We Looking At'
+side = 'both'
+
+[download]
+hash = '783157c607149875de1e045d72382d370256257c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2916368
+project-id = 224712

@@ -1,0 +1,210 @@
+---- Minecraft Crash Report ----
+// I'm sorry, Dave.
+
+Time: 2025-04-07 23:20:06 MSK
+Description: Exception in server tick loop
+
+java.lang.RuntimeException: Invalid id 4096 - maximum id range exceeded.
+    at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:295)
+    at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:281)
+    at net.minecraftforge.registries.ForgeRegistry.register(ForgeRegistry.java:113)
+    at thebetweenlands.common.registries.BlockRegistry.registerBlocks(BlockRegistry.java:1237)
+    at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_1102_BlockRegistry_registerBlocks_Register.invoke(.dynamic)
+    at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+    at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)
+    at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+    at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:845)
+    at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:630)
+    at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:99)
+    at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+    at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+    at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+    at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Linux (amd64) version 6.8.0-51-generic
+  Java Version: 1.8.0_312, Temurin
+  Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+  Memory: 260287384 bytes (248 MB) / 1063837696 bytes (1014 MB) up to 8303607808 bytes (7918 MB)
+  JVM Flags: 5 total; -Xms128M -Xmx8192M -XX:ConcGCThreads=1 -XX:ParallelGCThreads=1 -XX:+UseSerialGC
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: MCP 9.42 Powered by Forge 14.23.5.2860 120 mods loaded, 119 mods active
+       States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+       
+       | State | ID                        | Version                | Source                                             | Signature                                |
+       |:----- |:------------------------- |:---------------------- |:-------------------------------------------------- |:---------------------------------------- |
+       | LCH   | minecraft                 | 1.12.2                 | minecraft.jar                                      | None                                     |
+       | LCH   | mcp                       | 9.42                   | minecraft.jar                                      | None                                     |
+       | LCH   | FML                       | 8.0.99.99              | forge-1.12.2-14.23.5.2860.jar                      | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCH   | forge                     | 14.23.5.2860           | forge-1.12.2-14.23.5.2860.jar                      | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCH   | creativecoredummy         | 1.0.0                  | minecraft.jar                                      | None                                     |
+       | LCH   | foamfixcore               | 7.7.4                  | minecraft.jar                                      | None                                     |
+       | LCH   | forgelin                  | 1.8.4                  | Forgelin-Continuous-2.1.20.0.jar                   | None                                     |
+       | LCH   | alib                      | 1.0.12                 | alib-1.0.12.jar                                    | None                                     |
+       | LCH   | alchemistry               | 1.12.2-42              | alchemistry-1.12.2-42.jar                          | None                                     |
+       | LCH   | melonlib                  | 1.2                    | melonlib-1.12.2-1.2.jar                            | None                                     |
+       | LCH   | create                    | 0.2.0a                 | create-1.12.2-0.2.0a.jar                           | None                                     |
+       | LCH   | jei                       | 4.16.1.1013            | jei_1.12.2-4.16.1.1013.jar                         | None                                     |
+       | LCH   | abyssalcraft              | 1.11.0                 | AbyssalCraft-1.12.2-1.11.0.jar                     | 220f10d3a93b3ff5fbaa7434cc629d863d6751b9 |
+       | LCH   | acintegration             | 1.11.3                 | AbyssalCraft Integration-1.12.2-1.11.3.jar         | 220f10d3a93b3ff5fbaa7434cc629d863d6751b9 |
+       | LCH   | abyssaldepths             | 1.12.2-0.3.2           | AbyssalDepths-1.12.2-0.3.2.jar                     | None                                     |
+       | LCH   | baubles                   | 1.5.2                  | Baubles-1.12-1.5.2.jar                             | None                                     |
+       | LCH   | thaumcraft                | 6.1.BETA26             | Thaumcraft-1.12.2-6.1.BETA26.jar                   | None                                     |
+       | LCH   | botania                   | r1.10-364              | Botania r1.10-364.4.jar                            | None                                     |
+       | LCH   | redstoneflux              | 2.1.1                  | RedstoneFlux-1.12-2.1.1.1-universal.jar            | None                                     |
+       | LCH   | cofhcore                  | 4.6.6                  | CoFHCore-1.12.2-4.6.6.1-universal.jar              | None                                     |
+       | LCH   | craftstudioapi            | 1.0.0                  | CraftStudioAPI-universal-1.0.1.95-mc1.12-alpha.jar | None                                     |
+       | LCH   | twilightforest            | 3.11.1021              | twilightforest-1.12.2-3.11.1021-universal.jar      | None                                     |
+       | LCH   | animania                  | 2.0.3.28               | animania-1.12.2-base-2.0.3.28.jar                  | None                                     |
+       | LCH   | anvilpatch                | 1.1.1                  | anvilpatch-1.1.1.jar                               | None                                     |
+       | LCH   | aquaculture               | 1.6.8                  | Aquaculture-1.12.2-1.6.8.jar                       | None                                     |
+       | LCH   | aquaticabyssmod           | 2.2,2                  | aquaticodyssey-2.4.1.jar                           | None                                     |
+       | LCH   | guideapi                  | 1.12-2.1.8-63          | Guide-API-1.12-2.1.8-63.jar                        | None                                     |
+       | LCH   | bloodmagic                | 1.12.2-2.4.3-105       | BloodMagic-1.12.2-2.4.3-105.jar                    | None                                     |
+       | LCH   | arcanearteries            | 0.0.1 - Beta           | ArcaneArteries-1.12.2-1.0.0.jar                    | None                                     |
+       | LCH   | astralsorcery             | 1.10.27                | astralsorcery-1.12.2-1.10.27.jar                   | a0f0b759d895c15ceb3e3bcb5f3c2db7c582edf0 |
+       | LCH   | tombstone                 | 4.7.5                  | tombstone-1.12.2-4.7.5.jar                         | None                                     |
+       | LCH   | quark                     | r1.6-179               | Quark-r1.6-179.jar                                 | None                                     |
+       | LCH   | autoreglib                | 1.3-32                 | AutoRegLib-1.3-32.jar                              | None                                     |
+       | LCH   | bettercaves               | 1.12.2                 | bettercaves-1.12.2-2.0.4.jar                       | None                                     |
+       | LCH   | better_diving             | 1.5.8                  | BetterDiving-1.12.2-1.5.8.jar                      | None                                     |
+       | LCH   | bettermineshafts          | 1.12.2-2.2.1           | BetterMineshaftsForge-1.12.2-2.2.1.jar             | None                                     |
+       | LCH   | betternether              | 0.1.8.6                | betternether-0.1.8.6.jar                           | None                                     |
+       | LCH   | thebetweenlands           | 3.9.6                  | TheBetweenlands-3.9.6-universal.jar                | 38067d6878811efb38b6a045521cfd80b9b60b38 |
+       | LCH   | betweenlandsredstone      | 1.4.0                  | BetweenlandsRedstone-1.4.0.jar                     | None                                     |
+       | LCH   | dynamictrees              | 1.12.2-0.9.29          | DynamicTrees-1.12.2-0.9.29.jar                     | None                                     |
+       | LCH   | llibrary                  | 1.7.20                 | llibrary-1.7.20-1.12.2.jar                         | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+       | LCH   | mowziesmobs               | 1.5.8                  | mowziesmobs_1.12.2_1.5.8.jar                       | None                                     |
+       | LCH   | patchouli                 | 1.0-23.6               | Patchouli-1.0-23.6.jar                             | None                                     |
+       | LCH   | bewitchment               | 0.22.65                | bewitchment-1.12.2-0.0.22.65.jar                   | None                                     |
+       | LCH   | bibliocraft               | 2.4.6                  | BiblioCraft[v2.4.6][MC1.12.2].jar                  | None                                     |
+       | LCH   | bookshelf                 | 2.3.590                | Bookshelf-1.12.2-2.3.590.jar                       | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCH   | cat                       | 0.1                    | CavesAndDungeonsMod.jar                            | None                                     |
+       | LCH   | codechickenlib            | 3.2.3.358              | CodeChickenLib-1.12.2-3.2.3.358-universal.jar      | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+       | LCH   | cofhworld                 | 1.4.0                  | CoFHWorld-1.12.2-1.4.0.1-universal.jar             | None                                     |
+       | LCH   | colytra                   | 1.2.0.4                | colytra-1.12.2-1.2.0.4.jar                         | 2484ef4d131fdc0dca0647aa21b7b944ddb935a1 |
+       | LCH   | comforts                  | 1.4.1.3                | comforts-1.12.2-1.4.1.3.jar                        | 2484ef4d131fdc0dca0647aa21b7b944ddb935a1 |
+       | LCH   | creativecore              | 1.10.0                 | CreativeCore_v1.10.71_mc1.12.2.jar                 | None                                     |
+       | LCH   | crimsonrevelations        | 0.8                    | crimsonrevelations-0.8.jar                         | None                                     |
+       | LCH   | cucumber                  | 1.1.3                  | Cucumber-1.12.2-1.1.3.jar                          | None                                     |
+       | LCH   | stacked_dimensions_warden | 1.0.0                  | deeperinthecaves3.jar                              | None                                     |
+       | LCH   | disenchanter              | 1.8                    | disenchanter[1.12]1.8.jar                          | None                                     |
+       | LCH   | doggytalents              | 1.15.1.6               | DoggyTalents-1.12.2-1.15.1.6.jar                   | None                                     |
+       | LCH   | orelib                    | 3.6.0.1                | OreLib-1.12.2-3.6.0.1.jar                          | 7a2128d395ad96ceb9d9030fbd41d035b435753a |
+       | LCH   | dsurround                 | @VERSION@              | DynamicSurroundings-1.12.2-3.6.3.jar               | None                                     |
+       | LCH   | forestry                  | 5.8.2.425              | forestry_1.12.2-5.8.2.425.jar                      | None                                     |
+       | LCH   | dynamictreesforestry      | 1.12.2-1.0.10          | DynamicTreesForestry-1.12.2-1.0.10.jar             | None                                     |
+       | LCH   | dynamictreesquark         | 1.12.2-1.0.6           | DynamicTreesQuark-1.12.2-1.0.6.jar                 | None                                     |
+       | LCH   | dynamictreestc            | 1.12.2-1.4.2           | DynamicTreesTC-1.12.2-1.4.2.jar                    | None                                     |
+       | LCH   | dynamictreestbl           | 1.0.3                  | DynamicTreesTheBetweenlands-1.12.2-1.0.3.jar       | None                                     |
+       | LCH   | dynamictreesttf           | 1.12.2-1.2.3           | dynamictreesTheTwilightForest-1.12.2-1.2.3.jar     | None                                     |
+       | LCH   | vampirism                 | 1.6.2                  | Vampirism-1.12.2-1.6.2.jar                         | None                                     |
+       | LCH   | dynamictreesvampirism     | 1.12.2-1.0.1           | DynamicTreesVampirism-1.12.2-1.0.1.jar             | None                                     |
+       | LCH   | ebwizardry                | 4.3.14                 | ElectroblobsWizardry-4.3.14.jar                    | None                                     |
+       | LCH   | eplus                     | 5.0.179                | EnchantingPlus-1.12.2-5.0.179.jar                  | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCH   | minerva                   | 1.0.13                 | minerva-library-1.0.13.jar                         | b851b8b7c7f4d8d0e910ff27618150ba80c026ec |
+       | LCH   | extraalchemy              | 0.5.4                  | extraalchemy-forge-1.12-build11-0.5.4.jar          | b851b8b7c7f4d8d0e910ff27618150ba80c026ec |
+       | LCH   | flightboost               | 1.0.0.5                | flightboost-1.0.0.5.jar                            | None                                     |
+       | LCH   | foamfix                   | @VERSION@              | foamfix-0.10.15-1.12.2.jar                         | None                                     |
+       | LCH   | forgelin_continuous       | 2.1.20.0               | Forgelin-Continuous-2.1.20.0.jar                   | None                                     |
+       | LCH   | fossil                    | 8.0.5                  | fossilsarcheology-8.0.6.jar                        | None                                     |
+       | LCH   | friendlyfire              | 1.5.12                 | FriendlyFire-1.12.2-1.5.12.jar                     | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCH   | hammercore                | 12.2.58                | HammerLib-1.12.2-12.2.58.jar                       | 9f5e2a811a8332a842b34f6967b7db0ac4f24856 |
+       | LCH   | waila                     | 1.8.26                 | Hwyla-1.8.26-B41_1.12.2.jar                        | None                                     |
+       | LCH   | iceandfire                | 1.9.1                  | iceandfire-1.9.1-1.12.2.jar                        | None                                     |
+       | LCH   | jeibees                   | 0.9.0.5                | jeibees-0.9.0.5-mc1.12.2.jar                       | None                                     |
+       | LCH   | librarianlib              | 4.22                   | LibrarianLib-Continuous-1.12.2-4.22-2.0-2.jar      | None                                     |
+       | LCH   | libraryex                 | 1.2.2                  | LibraryEx-1.12.2-1.2.2.jar                         | None                                     |
+       | LCH   | magicbees                 | 1.0                    | MagicBees-1.12.2-3.2.25.jar                        | None                                     |
+       | LCH   | matmos_tct                | 7.0                    | Matmos_7.0_1.12.2.jar                              | None                                     |
+       | LCH   | soundphysics              | 7.0                    | Matmos_7.0_1.12.2.jar                              | None                                     |
+       | LCH   | mmbaubles                 | 1.0.1                  | MowziesMobsBaubles-1.0.1.jar                       | None                                     |
+       | LCH   | mysticalagriculture       | 1.7.5                  | MysticalAgriculture-1.12.2-1.7.5.jar               | None                                     |
+       | LCH   | mysticalagradditions      | 1.3.2                  | MysticalAgradditions-1.12.2-1.3.2.jar              | None                                     |
+       | LCH   | naturalpledge             | 3.0.3                  | NaturalPledge-r3.1.2.jar                           | None                                     |
+       | LCH   | naturescompass            | 1.8.5                  | NaturesCompass-1.12.2-1.8.5.jar                    | None                                     |
+       | LCH   | netherex                  | 2.2.5                  | NetherEx-1.12.2-2.2.5.jar                          | None                                     |
+       | LCH   | netherbackport            | 1.0.0                  | NetherUpdateBackport-1.12.2(1.0.1).jar             | None                                     |
+       | LCH   | placebo                   | 1.6.0                  | Placebo-1.12.2-1.6.1.jar                           | None                                     |
+       | LCH   | progressivebosses         | 1.5.4                  | ProgressiveBosses-1.5.4-mc1.12.x.jar               | None                                     |
+       | LCH   | additionalstructures      | 2.5.0                  | Rex's-AdditionalStructures-1.12.x(v.2.5.0).jar     | None                                     |
+       | LCH   | rtg                       | 1.1.0                  | RTG-1.12.2-7.3.3.6.jar                             | None                                     |
+       | LCH   | solarflux                 | 12.4.11                | SolarFluxReborn-1.12.2-12.4.11.jar                 | 9f5e2a811a8332a842b34f6967b7db0ac4f24856 |
+       | LCH   | stygian                   | 1.0.4                  | stygian-1.0.4.jar                                  | None                                     |
+       | LCH   | tctcore                   | 2.0                    | TCTcore-1.12.2.jar                                 | None                                     |
+       | LCH   | tfspellpack               | 1.1.0                  | TFSpellPack-1.1.0-MC1.12.2.jar                     | None                                     |
+       | LCH   | thaumadditions            | 12.7.9                 | ThaumicAdditions-1.12.2-12.7.9.jar                 | 9f5e2a811a8332a842b34f6967b7db0ac4f24856 |
+       | LCH   | thaumicaugmentation       | 1.12.2-2.1.14          | ThaumicAugmentation-1.12.2-2.1.14.jar              | 8f678591ba6f78d579e553a8aa94b4c4766cb13d |
+       | LCH   | thaumicperiphery          | 0.3.1                  | thaumicperiphery-0.3.1.jar                         | None                                     |
+       | LCH   | thermalfoundation         | 2.6.7                  | ThermalFoundation-1.12.2-2.6.7.1-universal.jar     | None                                     |
+       | LCH   | thermalexpansion          | 5.5.7                  | ThermalExpansion-1.12.2-5.5.7.1-universal.jar      | None                                     |
+       | LCH   | thermaldynamics           | 2.5.6                  | ThermalDynamics-1.12.2-2.5.6.1-universal.jar       | None                                     |
+       | LCH   | thermalinnovation         | 0.3.6                  | ThermalInnovation-1.12.2-0.3.6.1-universal.jar     | None                                     |
+       | LCH   | vampiresneedumbrellas     | 1.4                    | VampiresNeedUmbrellas-1.12.2-1.5.jar               | None                                     |
+       | LCH   | teamlapen-lib             | 1.6.2                  | Vampirism-1.12.2-1.6.2.jar                         | None                                     |
+       | LCH   | vampirism_integrations    | vampirism_integrations | VampirismIntegrations-1.12.2-1.3.0.jar             | None                                     |
+       | LCH   | vanillafix                | 1.0.10-150             | VanillaFix-1.0.10-150.jar                          | None                                     |
+       | LCH   | wawla                     | 2.6.275                | Wawla-1.12.2-2.6.275.jar                           | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCH   | wings                     | 1.1.6                  | wings-1.1.6-1.12.2.jar                             | None                                     |
+       | LCH   | mowzies_wings             | 1.0.0                  | wings-1.1.6-1.12.2.jar                             | None                                     |
+       | LCH   | bauble_wings              | 1.0.0                  | wings-1.1.6-1.12.2.jar                             | None                                     |
+       | LCH   | witherskelefix            | 2.6.3                  | WitherSkeletonTweaks-1.12.2-2.6.3.jar              | None                                     |
+       | LCH   | phosphor-lighting         | 1.12.2-0.2.7           | phosphor-forge-mc1.12.2-0.2.7-universal.jar        | None                                     |
+       | LCH   | librarianliblate          | 4.22                   | LibrarianLib-Continuous-1.12.2-4.22-2.0-2.jar      | None                                     |
+       | LCH   | mysticallib               | 1.12.2-1.13.0          | mysticallib-1.12.2-1.13.0.jar                      | None                                     |
+       | UD    | mobends_wings             | 1.0.0                  | wings-1.1.6-1.12.2.jar                             | None                                     |
+  Loaded coremods (and transformers): wings (wings-1.1.6-1.12.2.jar)
+                                        me.paulf.wings.server.asm.WingsRuntimePatcher
+                                        me.paulf.wings.server.asm.mobends.WingsMoBendsRuntimePatcher
+                                      TheBetweenlandsLoadingPlugin (TheBetweenlands-3.9.6-core.jar)
+                                        thebetweenlands.core.TheBetweenlandsClassTransformer
+                                      Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+                                        pl.asie.foamfix.coremod.FoamFixTransformer
+                                      Forgelin-Continuous (Forgelin-Continuous-2.1.20.0.jar)
+                                        
+                                      PhosphorFMLLoadingPlugin (phosphor-forge-mc1.12.2-0.2.7-universal.jar)
+                                        
+                                      Quark Plugin (Quark-r1.6-179.jar)
+                                        vazkii.quark.base.asm.ClassTransformer
+                                      TARCore (ThaumicAdditions-1.12.2-12.7.9.jar)
+                                        org.zeith.thaumicadditions.asm.TARTransformer
+                                      TransformLoader (DynamicSurroundings-1.12.2-3.6.3.jar)
+                                        
+                                      iceandfire (iceandfire-1.9.1-1.12.2.jar)
+                                        com.github.alexthe666.iceandfire.patcher.IceAndFireRuntimePatcher
+                                      CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+                                        team.chisel.ctm.client.asm.CTMTransformer
+                                      HCASM (HammerLib-1.12.2-12.2.58.jar)
+                                        com.zeitheron.hammercore.asm.HammerCoreTransformer
+                                      ColytraLoadingPlugin (colytra-1.12.2-1.2.0.4.jar)
+                                        c4.colytra.asm.ElytraTransformer
+                                      CoreModLoader (Matmos_7.0_1.12.2.jar)
+                                        com.sonicether.soundphysics.CoreModInjector
+                                      llibrary (llibrary-core-1.0.11-1.12.2.jar)
+                                        net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+                                        net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+                                      BewitchmentFMLLoadingPlugin (bewitchment-1.12.2-0.0.22.65.jar)
+                                        
+                                      AstralCore (astralsorcery-1.12.2-1.10.27.jar)
+                                        
+                                      CreativePatchingLoader (CreativeCore_v1.10.71_mc1.12.2.jar)
+                                        
+                                      VanillaFixLoadingPlugin (VanillaFix-1.0.10-150.jar)
+                                        
+                                      Betweenlands Redstone Transformer (BetweenlandsRedstone-1.4.0.jar)
+                                        com.joshiegemfinder.betweenlandsredstone.core.transformer.TransformerTileEntityHopper
+                                      LibrarianLib Plugin (LibrarianLib-Continuous-1.12.2-4.22-2.0-2.jar)
+                                        com.teamwizardry.librarianlib.asm.LibLibTransformer
+                                      Thaumic Augmentation Core Plugin (ThaumicAugmentation-1.12.2-2.1.14.jar)
+                                        thecodex6824.thaumicaugmentation.core.TATransformer
+  HammerLib Debug Information: Dependent Mods:
+                               -Thaumic Additions: Reconstructed (thaumadditions) @ 12.7.9
+  Suspected Mods: The Betweenlands (thebetweenlands)
+  Profiler Position: N/A (disabled)
+  Is Modded: Definitely; Server brand changed to 'fml,forge'
+  Type: Dedicated Server (map_server.txt)

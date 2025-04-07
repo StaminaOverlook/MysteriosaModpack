@@ -1,0 +1,13 @@
+filename = 'aquaticodyssey-2.4.1.jar'
+name = 'Aquatic Odyssey Mod'
+side = 'both'
+
+[download]
+hash = 'e5b905ad7ce1a6b2872a90382c753b1e56414209'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3019425
+project-id = 367350

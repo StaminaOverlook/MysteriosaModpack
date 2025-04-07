@@ -1,0 +1,13 @@
+filename = 'betternether-0.1.8.6.jar'
+name = 'BetterNether'
+side = 'both'
+
+[download]
+hash = 'f82a17a9a32bd65579f5414a5162fb8fedf4b73d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2859893
+project-id = 311377
